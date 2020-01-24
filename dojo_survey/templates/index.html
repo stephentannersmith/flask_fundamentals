@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="form-group border position-fixed w-25 p-3 bg-success">
+            <form action="/result" method="post">
+                <div>
+                Your Name: <input type="text" name="name" label="name" class="form-control" placeholder="Enter Name" required>
+                </div>
+                <div>
+                Dojo Location: <select name="dojo_location" id="dojo_location" label="where you are located" class="form-control" required>
+                    <option value="San Jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Florida">Florida</option>
+                    </select>
+                </div>
+                <div>
+                Favorite Language: <select name="fav_language" id="fav_language" label="what's your favorite language" class="form-control" required>
+                    <option value="python">Python</option>
+                    <option value="Java">Java *puke*</option>
+                    <option value="css">CSS</option>
+                </select>
+                </div>
+                <div>
+                Comment (optional): <textarea name="comment" id="comment" class="form-control mt-2 mb-2" placeholder="Comments left here"></textarea>
+                </div>
+                <div>
+                <input type="submit" value="Submit" class="form-control">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
