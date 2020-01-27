@@ -22,7 +22,6 @@ def index():
         game_info["message"] = "Too low!"
     else:
         game_info["message"] = f"{session['random_number']} was the number!"
-        game_info['css_class'] = "green"
     return render_template('index.html', info=game_info)
 
 @app.route('/guess', methods=["POST"])
